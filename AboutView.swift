@@ -9,9 +9,9 @@ struct AboutView: View {
                 
                 
                 Text("""
-Shoppo is discovery shopping platform for New Zealand retailers to showcase, promote and sell their products. Shoppo makes it easier for kiwis to **shop local** for over 2 million products from over 12 thousand online stores from around New Zealand.
+Vendorama is discovery shopping platform for New Zealand retailers to showcase, promote and sell their products. Vendorama makes it easier for kiwis to **shop local** for over 2 million products from over 12 thousand online stores from around New Zealand.
 
-Businesses with an online store can list their products so customers can click through to their website to purchase. Shoppo scans websites in New Zealand looking for products to list, and provided the criteria are met displays them along with company name and any contact details if available. 
+Businesses with an online store can list their products so customers can click through to their website to purchase. Vendorama scans websites in New Zealand looking for products to list, and provided the criteria are met displays them along with company name and any contact details if available. 
 
 """)
                 .font(.body)
@@ -33,7 +33,7 @@ Businesses with an online store can list their products so customers can click t
                             )
                             .shadow(color: .black.opacity(0.1), radius: 8, x: 0, y: 4)
                     VStack(alignment: .leading, spacing: 8) {
-                        Text("Shoppo is designed and built by Sean Naden in Auckland, New Zealand. Sean has been designing online stores since 2000. Visit [sean.shoppo.co.nz](https://sean.shoppo.co.nz)")
+                        Text("Vendorama is designed and built by Sean Naden in Auckland, New Zealand. Sean has been designing online stores since 2000.")
                             .font(.system(size: 14))
                             .lineSpacing(2)
                         
@@ -42,16 +42,16 @@ Businesses with an online store can list their products so customers can click t
                 
                     Text("""
     
-    **List my products on Shoppo**
-    You can create a storefront at www.shoppo.co.nz/list or click on the Add Store link in the menu above and Sean will add your store for you. To edit store details, you will need to log into the website and create an account. 
+    **List my products on Vendorama**
+    You can create a storefront at www.vendorama.co.nz/list or click on the Add Store link in the menu above and Sean will add your store for you. To edit store details, you will need to log into the website and create an account. 
     
-    You can manage your profile and set the update frequency: monthly (default), weekly or daily. This is how often Shoppobot visits your website. You can also configure a dedicated data feed in XML or CSV formats.
+    You can manage your profile and set the update frequency: monthly (default), weekly or daily. This is how often Vendobot visits your website. You can also configure a dedicated data feed in XML or CSV formats.
     
     **Requirements**
-    Your business must be located in New Zealand and your online store must be secure (https) and offer online purchasing, with products containing a name, price, and clear product image(s). You can learn more about how Shoppobot indexes online stores and elegibilty requirements at www.shoppo.co.nz/bot
+    Your business must be located in New Zealand and your online store must be secure (https) and offer online purchasing, with products containing a name, price, and clear product image(s). You can learn more about how Vendobot indexes online stores and elegibilty requirements at www.vendorama.co.nz/bot
     
     **Pricing**
-    It's free to list your store on Shoppo. For advanced options like more frequent updates, more products, boosted rankings and promoted products stores can upgrade to Premium. View more details at www.shoppo.co.nz/pricing
+    It's free to list your store on Vendorama. For advanced options like more frequent updates, more products, boosted rankings and promoted products stores can upgrade to Premium. View more details at www.vendorama.co.nz/pricing
     
     """)
                     .font(.body)
@@ -70,7 +70,7 @@ Businesses with an online store can list their products so customers can click t
                 }
                 
                 Text("""
-Shoppo is 100% owned and operated by Vendorama limited (NZBN: 9429035722168).
+                 Vendorama is 100% owned and operated by Vendorama limited (NZBN: 9429035722168).
 
 If you have feedback or suggestions, I’d love to hear from you.
 """)
@@ -90,7 +90,7 @@ If you have feedback or suggestions, I’d love to hear from you.
                     
                     
                         InfoContentView(
-                            title: "About Shoppo",
+                            title: "About Vendorama",
                             contentId: 7,
                             fallback: "",
                             footerText: "",
@@ -98,7 +98,7 @@ If you have feedback or suggestions, I’d love to hear from you.
                             extraContent: nil
                         )
                 Section(header:
-                    Text("\nFor our privacy and security policies please visit our website at www.shoppo.co.nz/privacy\n\nFor our terms and conditions please visit our website at www.shoppo.co.nz/terms\n\n")
+                    Text("\nFor our privacy and security policies please visit our website at www.vendorama.co.nz/privacy\n\nFor our terms and conditions please visit our website at www.vendorama.co.nz/terms\n\n")
                         .font(.footnote)
                         .foregroundStyle(.secondary)
                         .textCase(nil)
@@ -108,7 +108,7 @@ If you have feedback or suggestions, I’d love to hear from you.
             }
             .padding()
         }
-        .navigationTitle("About Shoppo")
+        .navigationTitle("About Vendorama")
         //.navigationBarHidden(true)
         .navigationBarTitleDisplayMode(.inline)
         .sheet(isPresented: $showContactSheet) {

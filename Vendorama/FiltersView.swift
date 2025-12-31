@@ -1,6 +1,5 @@
 //
 //  FiltersView.swift
-//  Shoppo
 //
 //  Created by Sean Naden on 25/10/2025.
 //

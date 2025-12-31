@@ -13,7 +13,7 @@ struct AddURLView: View {
     @State private var url: String = ""
     @State private var message: String = ""
     @State private var showingAlert: Bool = false
-    @State private var subject: String = "Shoppo App Add Store Request"
+    @State private var subject: String = "Vendorama App Add Store Request"
 
     // Sending/alert state
     @State private var isSending: Bool = false
@@ -32,7 +32,7 @@ struct AddURLView: View {
             Form {
                 
                 Section(header:
-                    Text("Enter the URL of your online store and we'll let you now when your store has been crawled by Shoppobot. ")
+                    Text("Enter the URL of your online store and we'll let you now when your store has been crawled by Vendobot. ")
                         .font(.system(size: 14))
                         .foregroundStyle(.secondary)
                         .padding(.bottom, -10)
@@ -118,7 +118,7 @@ struct AddURLView: View {
                 }
 
                 Section(header:
-                    Text("Note that your online store must be located in New Zealand and meet the minimum requirements as detailed at www.shoppo.co.nz/bot\n\nFor our privacy and security policies please visit our website at www.shoppo.co.nz/privacy")
+                    Text("Note that your online store must be located in New Zealand and meet the minimum requirements as detailed at www.vendorama.co.nz/bot\n\nFor our privacy and security policies please visit our website at www.vendorama.co.nz/privacy")
                         .font(.footnote)
                         .foregroundStyle(.secondary)
                         .textCase(nil)
@@ -145,8 +145,8 @@ struct AddURLView: View {
             }
             .sheet(isPresented: $showMailCompose) {
                 MailComposeView(
-                    subject: "Shoppo App Add Store Request",
-                    recipients: ["sean@shoppo.co.nz"],
+                    subject: "Vendorama App Add Store Request",
+                    recipients: ["sean@vendorama.co.nz"],
                     body: """
                           Name: \(name)
                           URL: \(url)
@@ -224,7 +224,7 @@ struct AddURLView: View {
                 if (200...299).contains(statusCode) {
                     await MainActor.run {
                         alertTitle = "Thanks!"
-                        alertMessage = "Your store will be added to Shoppo over then next few days."
+                        alertMessage = "Your store will be added to Vendorama over then next few days."
                         showingAlert = true
                         message = ""
                         isSending = false

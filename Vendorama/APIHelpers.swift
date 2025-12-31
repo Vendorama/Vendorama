@@ -15,14 +15,14 @@ enum APIConfig {
            let url = URL(string: raw), !raw.isEmpty {
             return url
         }
-        return URL(string: "https://www.shoppo.co.nz/app/shoppo/ios/1/")!
+        return URL(string: "https://www.vendorama.co.nz/app/ios/1/")!
     }()
     static var baseURL: URL = {
         if let raw = Bundle.main.object(forInfoDictionaryKey: "BASE_URL") as? String,
            let url = URL(string: raw), !raw.isEmpty {
             return url
         }
-        return URL(string: "https://www.shoppo.co.nz/")!
+        return URL(string: "https://www.vendorama.co.nz/")!
     }()
 }
 

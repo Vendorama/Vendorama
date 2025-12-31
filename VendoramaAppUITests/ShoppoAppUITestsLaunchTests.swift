@@ -1,13 +1,13 @@
 //
-//  ShoppoAppUITestsLaunchTests.swift
-//  ShoppoAppUITests
+//  VendoramaAppUITestsLaunchTests.swift
+//  VendoramaAppUITests
 //
 //  Created by Sean Naden on 18/04/2025.
 //
 
 import XCTest
 
-final class ShoppoAppUITestsLaunchTests: XCTestCase {
+final class VendoramaAppUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

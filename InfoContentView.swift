@@ -36,7 +36,7 @@ struct InfoContentView: View {
                 }
 
                 Text("""
-Shoppo is 100% owned and operated by Vendorama limited (NZBN: 9429035722168).
+Vendorama is 100% owned and operated by Vendorama limited (NZBN: 9429035722168).
 
 If you have feedback or suggestions, I’d love to hear from you.
 """)

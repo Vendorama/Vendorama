@@ -1,6 +1,5 @@
 //
 //  BrowseView.swift
-//  Shoppo
 //
 //  Created by Sean Naden on 25/10/2025.
 //
@@ -242,7 +241,7 @@ struct BrowseView: View {
                         // 5) Intro UI back on
                         showIntro = true
                     }) {
-                        Image("shoppo")
+                        Image("vendorama")
                             .resizable()
                             .scaledToFit()
                             .frame(width: 111, height: 28)
@@ -259,7 +258,7 @@ struct BrowseView: View {
             }
             //.glassEffect()
             .navigationDestination(item: $selectedProduct) { product in
-                ProductDetailViewShoppo(product: product, viewModel: viewModel)
+                ProductDetailView(product: product, viewModel: viewModel)
             }
             //.navigationBarHidden(showToTop)
             //.transition(.move(edge:.top))
@@ -1522,7 +1521,7 @@ struct BrowseView: View {
             Button {
                 showAboutSheet = true
             } label: {
-                Label("About Shoppo", systemImage: "info.circle")
+                Label("About", systemImage: "info.circle")
             }
             Button {
                 showContactSheet = true

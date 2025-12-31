@@ -1,7 +1,7 @@
 import SwiftUI
 import SDWebImageSwiftUI
 
-struct ProductDetailViewShoppo: View {
+struct ProductDetailView: View {
     let product: Product
     @ObservedObject var viewModel: SearchViewModel
 
@@ -265,13 +265,13 @@ struct ProductDetailViewShoppo: View {
 }
 
 #if DEBUG
-struct ProductDetailViewShoppo_Previews: PreviewProvider {
+struct ProductDetailView_Previews: PreviewProvider {
     static var sampleProduct: Product {
         Product(
             name: "Sample Product Title That Wraps Across Multiple Lines For Preview",
             price: "$129.00",
             sale_price: "$159.00",
-            image: "https://picsum.photos/seed/shoppo/600/600",
+            image: "https://picsum.photos/seed/vendorama/600/600",
             url: "https://www.example.com/product",
             product_id: "preview-001",
             vendor_id: "vendor-123",
@@ -292,12 +292,12 @@ struct ProductDetailViewShoppo_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             NavigationView {
-                ProductDetailViewShoppo(product: sampleProduct, viewModel: viewModel)
+                ProductDetailView(product: sampleProduct, viewModel: viewModel)
             }
             .previewDisplayName("Light")
 
             NavigationView {
-                ProductDetailViewShoppo(product: sampleProduct, viewModel: viewModel)
+                ProductDetailView(product: sampleProduct, viewModel: viewModel)
             }
             .preferredColorScheme(.dark)
             .previewDisplayName("Dark")

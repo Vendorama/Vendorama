@@ -370,7 +370,7 @@ class SearchViewModel: ObservableObject {
             print("[SearchVM] Error building URL for page \(currentPage).")
             return
         }
-        print(url.absoluteString)
+        //print(url.absoluteString)
         if debugLogging {
             print("[SearchVM] Fetching page \(currentPage) [\(searchType)] -> \(url.absoluteString)")
         }

@@ -6,7 +6,7 @@ struct FAQsView: View {
             title: "FAQs",
             contentId: 2,
             fallback: " ",
-            footerText: "For our privacy and security policies please visit our website at www.shoppo.co.nz/privacy\n\nFor our terms and conditions please visit our website at www.shoppo.co.nz/terms",
+            footerText: "For our privacy and security policies please visit our website at www.vendorama.co.nz/privacy\n\nFor our terms and conditions please visit our website at www.vendorama.co.nz/terms",
             showContact: true,
             extraContent: nil
         )

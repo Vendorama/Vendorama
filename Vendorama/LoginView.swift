@@ -57,7 +57,7 @@ struct LoginView: View {
                 .padding(.bottom, 20)
                 
                 Section {
-                    Text("To reset password visit www.shoppo.co.nz/password")
+                    Text("To reset password visit www.vendorama.co.nz/password")
                     
                         .frame(maxWidth: .infinity, alignment: .leading)
                         //.font(.footnote)

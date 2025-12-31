@@ -74,7 +74,7 @@ struct AccountView: View {
                 }
                 if isLoggedIn {
                     Section {
-                        Text("To reset password visit www.shoppo.co.nz/password")
+                        Text("To reset password visit www.vendorama.co.nz/password")
                         
                             .frame(maxWidth: .infinity, alignment: .leading)
                             //.font(.footnote)
@@ -150,7 +150,7 @@ struct AccountView: View {
                 
                 if isLoggedIn {
                     Section {
-                        Text("To edit your profile or delete your account please visit www.shoppo.co.nz/account\n\nFor privacy and security policies please visit www.shoppo.co.nz/privacy")
+                        Text("To edit your profile or delete your account please visit www.vendorama.co.nz/account\n\nFor privacy and security policies please visit www.vendorama.co.nz/privacy")
                             .frame(maxWidth: .infinity, alignment: .leading)
                             //.font(.footnote)
                     }

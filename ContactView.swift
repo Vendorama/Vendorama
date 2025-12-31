@@ -113,18 +113,18 @@ struct ContactView: View {
                         .foregroundStyle(.secondary)
                         .textCase(nil)
                 ) {
-                    Link(destination: URL(string: "mailto:sean@shoppo.co.nz")!) {
-                        Label("sean@shoppo.co.nz", systemImage: "envelope")
+                    Link(destination: URL(string: "mailto:sean@vendorama.co.nz")!) {
+                        Label("sean@vendorama.co.nz", systemImage: "envelope")
                     }
-                    Link(destination: URL(string: "https://www.shoppo.co.nz/contact/")!) {
-                        Label("www.shoppo.co.nz/contact", systemImage: "globe")
+                    Link(destination: URL(string: "https://www.vendorama.co.nz/contact/")!) {
+                        Label("www.vendorama.co.nz/contact", systemImage: "globe")
                     }
                     Link(destination: URL(string: "tel:0210591339")!) {
                         Label("021 0591339", systemImage: "phone")
                     }
                 }
                 Section(header:
-                    Text("For our privacy and security policies please visit our website at www.shoppo.co.nz/privacy")
+                    Text("For our privacy and security policies please visit our website at www.vendorama.co.nz/privacy")
                         //.font(.footnote)
                         .foregroundStyle(.secondary)
                         .textCase(nil)
@@ -135,7 +135,7 @@ struct ContactView: View {
             }
             //.offset(y: -130)
             .formStyle(.grouped) // helps reduce the big top inset
-            .navigationTitle("Contact Shoppo")
+            .navigationTitle("Contact Vendorama")
             .navigationBarHidden(true)
             .navigationBarTitleDisplayMode(.inline)
             .scrollContentBackground(.hidden)
@@ -153,7 +153,7 @@ struct ContactView: View {
             .sheet(isPresented: $showMailCompose) {
                 MailComposeView(
                     subject: "App Contact",
-                    recipients: ["sean@shoppo.co.nz"],
+                    recipients: ["sean@vendorama.co.nz"],
                     body: """
                           Name: \(name)
                           URL: \(url)

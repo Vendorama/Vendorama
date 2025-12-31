@@ -201,7 +201,7 @@ struct FavoritesView: View {
                     ForEach(items, id: \.id) { product in
                         NavigationLink(
                             destination:
-                                ProductDetailViewShoppo(
+                                ProductDetailView(
                                     product: product,
                                     viewModel: viewModel,
                                     onRequestDismissContainer: { dismissSheet() }
@@ -269,7 +269,7 @@ struct FavoritesView: View {
                 ForEach(items, id: \.id) { product in
                     NavigationLink(
                         destination:
-                            ProductDetailViewShoppo(
+                            ProductDetailView(
                                 product: product,
                                 viewModel: viewModel,
                                 onRequestDismissContainer: { dismissSheet() }
@@ -390,7 +390,7 @@ struct FavoritesView: View {
                         ForEach(section.products, id: \.id) { product in
                             NavigationLink(
                                 destination:
-                                    ProductDetailViewShoppo(
+                                    ProductDetailView(
                                         product: product,
                                         viewModel: viewModel,
                                         onRequestDismissContainer: { dismissSheet() }
